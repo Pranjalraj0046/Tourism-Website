@@ -1,0 +1,47 @@
+	body{
+			background:url(daniil-silantev-318853-unsplash.jpg);
+			background-repeat:no-repeat;
+			background-size: cover;
+		}
+	
+	.navbar-inverse .navbar-nav > li >a {
+	color: white;
+	font-size: 1.5em;
+	}
+
+	.navbar-inverse .navbar-nav > li >a:hover{
+		color:rgb(128, 128, 128);
+	}
+
+	.navbar-inverse .navbar-brand 
+{
+	color: white;
+}
+
+	#h{	
+		font-size: 5em;
+		font-weight: 700;
+		text-shadow: 0px 4px 3px rgba(0,0,,0.5),
+	                 0px 8px 13px rgba(0,88,,0.5),
+	                 0px 18px 23px rgba(88,0,0,0.5);
+	}
+
+	.navbar-inverse{
+		
+		background-color: transparent;	
+		border:none;
+
+}
+	.content{
+		text-align: center;
+		text-transform: capitalize;
+		padding-top: 25%;
+		color: white;
+		font-weight: bold;
+		
+	}
+	#hr1{
+		width: 800px;
+		border-top: 1px solid #f8f8f8;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}

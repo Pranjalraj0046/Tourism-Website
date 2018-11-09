@@ -1,0 +1,70 @@
+body{
+			background:url(daniil-silantev-318853-unsplash.jpg);
+			background-repeat:no-repeat;
+			background-size: cover;
+		}
+	.navbar-inverse .navbar-nav > li >a {
+	color: white;
+	font-size: 1.5em;
+	}
+
+	.navbar-inverse .navbar-nav > li >a:hover{
+		color:rgb(128, 128, 128);
+	}
+
+	.navbar-inverse .navbar-brand 
+{
+	color: white;
+}
+
+	.navbar-inverse{
+		
+		background-color: transparent;	
+		border:none;
+
+}
+.valid:before{
+		color:green;
+		content:"\2713";
+}
+.invalid:before{
+		color:red;
+		content: "X"
+	}
+#msg{
+	display:none;
+	margin-left: 15%;
+}
+.content{
+	margin-top: 15%;
+	margin-left: 25%;
+	width: 50%;
+	color:white;
+	background-color: rgba(5,5,5,.5);
+}
+	label{
+		margin-left:15%;
+	}
+	.btn-primary{
+		width: 70%;
+		margin-left:15%;
+	}
+.form-control{
+	background-color: transparent;
+	color:white;
+	border: none;
+	border-bottom: 1px solid white;
+	padding-bottom:3%;
+	margin:auto auto;
+	width:70%;
+}
+.content>h2{
+	color:white;
+	text-align: center;
+}
+	.signup{
+		text-align: center;
+	}
+	.signup>a:hover{
+		text-decoration: none;
+	}

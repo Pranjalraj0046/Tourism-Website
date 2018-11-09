@@ -1,0 +1,60 @@
+.navbar-inverse{
+	background: transparent;
+	border:none;
+}
+.jumbotron{
+	background: transparent;
+	text-transform: capitalize;
+	text-align: center;
+	height: 300px;
+}
+h3{ color:white;
+	font-weight: bold;
+}
+
+.thumbnail{
+	background:transparent;
+}
+
+h1{
+	color:white;
+}
+body{
+			padding-top: 5%;
+			background:url(daniil-silantev-318853-unsplash.jpg);
+			background-repeat:no-repeat;
+			background-size: cover;
+	}
+
+.navbar-inverse .navbar-nav > li >a {
+	color: white;
+	font-size: 1.5em;
+	}
+.link{
+	color: white;
+}
+.navbar-inverse .navbar-nav > li >a:hover{
+		color:rgb(128, 128, 128);
+	}
+
+.navbar-inverse .navbar-brand 
+{
+	color: white;
+}
+.thumbnail{
+	border-color:transparent;
+}
+.thumbnail > img{
+	height:350px;
+	width:100%;
+}
+.caption{ 
+	color:white;
+	background: rgba(5, 5,5,.5);
+	border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.thumbnail > .caption > p{
+	color:white;
+	font-weight:bold;
+}

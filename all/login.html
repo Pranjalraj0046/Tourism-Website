@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script defer src="fontawesome-all.js"></script>
+	<link rel="stylesheet" type="text/css" href="./bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="log.css">
+	<title></title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class=" navbar-header">
+			<button tpye="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navdata" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="project_index.html" class="navbar-brand"><i class="fas fa-map-marker"></i> Tourism point</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navdata">
+			<ul class="nav navbar-nav">
+				<li><a href="project_index.html">Home</a></li>
+				<li><a href="hotels.html">Hotels</a></li>
+				<li><a href="#">Travel</a></li>
+				<li><a href="contacts.html">About us</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+					<li><a href="signup.html">Sign Up <i class="fas fa-user-plus"></i></a></li>
+					<li><a href="login.html">Login <i class="fas fa-user"></i></a></li>
+			</ul>
+	</div>
+</nav>
+<div class="container">
+			<div class="content">
+			<h2>Login</h2>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br><br>
+			<form method="POST">
+  				  <div class="form-group">
+    				<label for="uname">Email</label>
+    				<input type="email" class="form-control" id="uname"  placeholder="email/username" required="true">
+  				  </div>
+  				  <br><br>
+  				  <div class="form-goup">
+  				  	<label for="pwd">Password</label>
+  				  	<input type="Password" name="pass" id="pwd" class="form-control" placeholder="password" required="true" onfocus="focu()" onblur="blu()" onkeyup="valid()">
+  				  </div>
+  				  <br><br>
+  		<div id="msg">
+			<h3>Password must contain the following:</h3>
+			<p class="invalid" id="letters">A <b>lowercase</b> Letter.</p>
+			<p class="invalid" id="capital">A <b>uppercase</b> Letter.</p>
+			<p class="invalid" id="digits">A <b>Digit</b>.</p>
+			<p class="invalid" id="special">A <b>special character</b>.</p>
+			<p class="invalid" id="len">Minimum 8 characters.</p>
+		</div>
+  				  <button type="submit" class="btn btn-primary">Login</button>
+  				  <div class="signup"><p>New Here?</p><a href="signup.html">Signup</a></div>
+			</form>
+
+
+			</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="bootstrap.js"></script>
+<script type="text/javascript">
+	var pwd=document.querySelector("#pwd");
+	var letters=document.querySelector("#letters");
+	var cap=document.querySelector("#capital");
+	var digi=document.querySelector("#digits");
+	var special=document.querySelector("#special");
+	var len=document.querySelector("#len")
+	
+	function focu(){
+		document.getElementById("msg").style.display="block";
+	}
+	function blu(){
+		document.getElementById("msg").style.display="none";
+	}
+	function valid(){
+		var lowercase=/[a-z]/g; 
+		if(pwd.value.match(lowercase)){
+			letters.classList.remove("invalid");
+			letters.classList.add("valid");
+		}
+		else{
+		letters.classList.remove("valid");
+			letters.classList.add("invalid");	
+		}
+		var dig=/[0-9]/g;
+		if(pwd.value.match(dig)){
+			digi.classList.remove("invalid");
+			digi.classList.add("valid");
+		}
+
+		else{
+		    digi.classList.remove("valid");
+			digi.classList.add("invalid");	
+		}
+		var uppercase=/[A-Z]/g;
+		if(pwd.value.match(uppercase)){
+			cap.classList.remove("invalid");
+			cap.classList.add("valid");
+		}
+
+		else{
+			cap.classList.remove("valid");
+			cap.classList.add("invalid");	
+		}
+		if(pwd.value.length>=8){
+			len.classList.remove("invalid");
+			len.classList.add("valid");
+		}
+
+		else{
+			len.classList.remove("valid");
+			len.classList.add("invalid");	
+		}
+		var sp=/[@$,<>#:?_*&;]/g;
+		if(pwd.value.match(sp)){
+			special.classList.remove("invalid");
+			special.classList.add("valid");
+		}
+
+		else{
+			special.classList.remove("valid");
+			special.classList.add("invalid");	
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<style type="text/css">
+		.big{
+			font-size: 80px;
+			color:yellow;
+		}
+		.im{
+			height: 400px;
+			width: 400px;
+		}
+		#container > ul{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+<h1>DOM HEADiNG</h1>
+<img class="im" src="file:///H:/IMG_20180127_123530.jpg">
+<div id="container">
+   <ul>
+      <li> List Item
+        <ul>
+           <li> Child </li>
+        </ul>
+      </li>
+      <li> List Item </li>
+      <li> List Item </li>
+      <li> List Item </li>
+   </ul>
+   <ol>
+   	<li>game
+   		<ul>games</ul>
+   		<ul>games</ul>
+   		<ul>games</ul>
+   	</li>
+   	<li>game</li>
+   	<li>game</li>
+   </ol>
+</div>
+<script type="text/javascript">
+	var h1=document.querySelector("h1");
+	h1.addEventListener("click",function(){
+		h1.innerText="You just clicked me!"
+	});
+</script>
+</body>
+</html>
